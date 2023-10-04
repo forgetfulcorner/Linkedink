@@ -22,9 +22,9 @@ window.onload = () => {
 
     csvGenerator(); //PRODUCES csvFileArray
 
-    for (let i = 0; i < 1; i++) {
+    for (let i = 0; i < csvFileArray.length; i++) {
 
-        fetch(csvFileArray[25])
+        fetch(csvFileArray[i])
             .then(res => res.text())
             .then(csv => {
 
@@ -39,11 +39,10 @@ window.onload = () => {
                     // console.log('yuss')
 
                     // createParagraphElement('title', 'title-div', 'ph1')
-                    console.log(csvFileArray[2])
-                    fetchCSV(csvFileArray[25])
-                }
+                    console.log(csvFileArray[i])
+                    fetchCSV(csvFileArray[i])
+                } 
 
-                
 
             })
     }
@@ -137,11 +136,8 @@ function fetchCSV(file) {
             var rows = csv.split('\n');
             var values = csv.split(',');
 
-
-
             
             for (let i = 0; i < rows.length; i++) {
-                console.log('ssss')
                 if (i > 1) {
                     values = rows[i].split(',');
                     column0.push(`${values[0]}`);
