@@ -49,6 +49,7 @@ a {
 	margin-right: 2rem;
 	padding-left: 2rem;
 	padding-right: 2rem;
+	padding-bottom: 2rem;
 
 
 	border: 5rem solid #193EFF;
@@ -57,8 +58,10 @@ a {
 	/* background-color: #4CAF50; */
 	border-radius: 1000px;
 
+}
 
-
+a:hover {
+	background-color: #193EFF;
 }
 
 p {
