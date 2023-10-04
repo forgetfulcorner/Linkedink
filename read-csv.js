@@ -22,21 +22,25 @@ window.onload = () => {
 
     csvGenerator(); //PRODUCES csvFileArray
 
-    for (let i = 0; i < csvFileArray.length; i++) {
+    for (let i = 0; i < 1; i++) {
 
-        fetch(csvFileArray[2])
+        fetch(csvFileArray[25])
             .then(res => res.text())
             .then(csv => {
 
                 csvChecker = findWord('GET', csv);
 
-                console.log(csvChecker)
-                
-                if (csvChecker === false) {
+                // console.log(csvChecker)
+                // console.log(csv.length)
+
+
+                if (csvChecker === false && csv.length < 20000) {
+                // if (csvChecker === false || ) {
+                    // console.log('yuss')
 
                     // createParagraphElement('title', 'title-div', 'ph1')
                     console.log(csvFileArray[2])
-                    fetchCSV(csvFileArray[2])
+                    fetchCSV(csvFileArray[25])
                 }
 
                 
@@ -133,10 +137,11 @@ function fetchCSV(file) {
             var rows = csv.split('\n');
             var values = csv.split(',');
 
+
+
             
-
             for (let i = 0; i < rows.length; i++) {
-
+                console.log('ssss')
                 if (i > 1) {
                     values = rows[i].split(',');
                     column0.push(`${values[0]}`);
@@ -154,7 +159,6 @@ function fetchCSV(file) {
             for (let i = 0; i < column2.length - 1; i++){
 
                 const url = column2[i]
-                console.log(url)
 
                 if (column1[i] == "undefined") {
                 } else {
