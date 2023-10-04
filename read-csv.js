@@ -22,7 +22,7 @@ window.onload = () => {
 
     csvGenerator(); //PRODUCES csvFileArray
 
-    for (let i = 0; i < 3; i++) {
+    for (let i = 0; i < csvFileArray.length; i++) {
 
         fetch(csvFileArray[i])
             .then(res => res.text())
