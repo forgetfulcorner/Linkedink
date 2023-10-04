@@ -4,11 +4,11 @@ var column2 = [];
 
 var csvFileArray = [];
 
-var testArray = [
-    'DesignJobs_10_3_2023__10_00_00_PM.csv',
-    // 'DesignJobs_10_3_2023__9_43_14_PM.csv',
-    // 'DesignJobs_10_3_2023__10_31_00_PM.csv'
-];
+// var testArray = [
+//     'DesignJobs_10_3_2023__10_00_00_PM.csv',
+//     // 'DesignJobs_10_3_2023__9_43_14_PM.csv',
+//     // 'DesignJobs_10_3_2023__10_31_00_PM.csv'
+// ];
 
 // var testArray = [
 //     'DesignJobs_10_3_2023__10_31_00_PM.csv',
@@ -22,9 +22,9 @@ window.onload = () => {
 
     csvGenerator(); //PRODUCES csvFileArray
 
-    for (let i = 0; i < testArray.length; i++) {
+    for (let i = 0; i < csvFileArray.length; i++) {
 
-        fetch(testArray[i])
+        fetch(csvFileArray[i])
             .then(res => res.text())
             .then(csv => {
 
@@ -34,8 +34,7 @@ window.onload = () => {
 
                     // createParagraphElement('title', 'title-div', 'ph1')
 
-                    fetchCSV(testArray[i])
-                    console.log('3dsds')
+                    fetchCSV(csvFileArray[i])
                 }
 
             })
@@ -44,14 +43,14 @@ window.onload = () => {
     // fetchCSV()
 
     // AJAX FETCH CSV
-    fetch("DesignJobs_10_3_2023__9_43_14_PM.csv")
-        .then(res => res.text())
-        .then(csv => {
+    // fetch("DesignJobs_10_3_2023__9_43_14_PM.csv")
+    //     .then(res => res.text())
+    //     .then(csv => {
 
-            csvChecker = findWord('GET', csv);
+    //         csvChecker = findWord('GET', csv);
 
 
-        })
+    //     })
 
     
 
