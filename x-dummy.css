@@ -1,0 +1,106 @@
+* {
+	font-family: Arial, Helvetica, sans-serif;
+	box-sizing: border-box;
+}
+
+@font-face { 
+	font-family: Gabarito; src: url('Gabarito-VariableFont_wght.ttf'); 
+	font-family: SpaceMonoBold; src: url('SpaceMono-Bold.ttf'); 
+	font-family: SpaceMonoRegular; src: url('SpaceMono-Regular.ttf'); 
+} 
+
+input[type="file"] {
+	margin-bottom: 10px;
+}
+#demoTable {
+	border-collapse: collapse;
+}
+#demoTable tr:nth-child(odd) {
+	background: #f2f2f2;
+}
+#demoTable td {
+	border: 1px solid #ddd;
+	padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+}
+
+#links-container {
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+	font-size: 1rem;
+	font-family: "SpaceMonoRegular";
+	text-transform: uppercase;
+	text-decoration: none;
+	text-align: center center;
+	line-height: 2rem;
+
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	height: 2rem;
+
+	margin-left: 1rem;
+	margin-right: 2rem;
+	padding-left: 2rem;
+	padding-right: 2rem;
+
+
+	border: 5rem solid #193EFF;
+	border-width: 2px;
+	color:#193EFF;
+	/* background-color: #4CAF50; */
+	border-radius: 1000px;
+
+
+
+}
+
+p {
+    margin: 0;
+    padding: 0;
+	font-family: "SpaceMonoRegular";
+	color:#193EFF;
+	font-weight: 100;
+	
+	font-size: 1.5rem;
+	line-height: 4rem;
+
+	padding-left: 5rem;
+	padding-right: 5rem;
+
+}
+
+#p1 {
+    margin: 0;
+    padding: 0;
+	text-transform: uppercase;
+	
+	width: 350px;
+}
+
+#p2 {
+    margin: 0;
+    padding: 0;
+	max-width: 100%;
+	white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+h1 {
+	margin-left: 1rem;
+	margin-top: 4rem;
+	margin-bottom: 3rem;
+
+	font-family: "SpaceMonoRegular";
+	color:#193EFF;
+	
+	font-size: 4rem;
+	line-height: 4rem;
+}
