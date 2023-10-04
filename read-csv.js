@@ -37,7 +37,7 @@ window.onload = () => {
                 console.log(csv.length)
 
 
-                if (csvChecker1 === false && csvChecker2 === false && csv.length < 20000) {
+                if (csvChecker1 === false && csvChecker2 === false && csv.length != 9379 && csv.length != 9378 && csv.length != 9390) { // 9379 ACCOUNTS FOR LENGTH OF HTML DOCUMENT WHEN GITHUB FAILS TO LOAD A CSV FILE. WHEN DOING SO, IT WILL IMPROPERLY DISPLAY. ADDITIONAL NUMBERS ACCOUNT FOR THE LENGTH OF CSV FILE NAME THAT MIGHT ALTER THE OVERALL LENGTH OF HTML DOC.
                 // if (csvChecker === false || ) {
                     // console.log('yuss')
                     console.log("GOAL")
