@@ -24,19 +24,19 @@ window.onload = () => {
 
     for (let i = 0; i < csvFileArray.length; i++) {
 
-        fetch(csvFileArray[i])
+        fetch(csvFileArray[2])
             .then(res => res.text())
             .then(csv => {
 
                 csvChecker = findWord('GET', csv);
-                console.log(csvChecker)
 
+                console.log(csvChecker)
                 
                 if (csvChecker === false) {
 
                     // createParagraphElement('title', 'title-div', 'ph1')
-                    console.log(csvFileArray[i])
-                    fetchCSV(csvFileArray[i])
+                    console.log(csvFileArray[2])
+                    fetchCSV(csvFileArray[2])
                 }
 
                 
@@ -563,9 +563,12 @@ function csvGenerator() {
     for (let i = 0; i < numberDays; i++) {
         fileNameArray1.push(dates2023[cumulativeDays - i])
 
-        for (let j = 2; j <= 12; j+=2) {
+        for (let j = 8; j <= 12; j+=2) {
             csvFileArray.push(`DesignJobs_${fileNameArray1[i]}${j}_00_00_AM.csv`)
-            csvFileArray.push(`DesignJobs_${fileNameArray1[i]}${j}_00_00_PM.csv`) 
+        }
+
+        for (let k = 2; k <= 12; k+=2) {
+            csvFileArray.push(`DesignJobs_${fileNameArray1[i]}${k}_00_00_PM.csv`) 
         }
 
     }
