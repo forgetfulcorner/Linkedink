@@ -29,25 +29,62 @@ window.onload = () => {
             .then(csv => {
 
                 csvChecker = findWord('GET', csv);
+                console.log(csvChecker)
+
                 
-                if (csvChecker == false) {
+                if (csvChecker === false) {
 
                     // createParagraphElement('title', 'title-div', 'ph1')
-
+                    console.log(csvFileArray[i])
                     fetchCSV(csvFileArray[i])
                 }
+
+                
 
             })
     }
 
-    // fetchCSV()
-
-    // AJAX FETCH CSV
-    // fetch("DesignJobs_10_3_2023__9_43_14_PM.csv")
+    // fetch(csvFileArray[35])
     //     .then(res => res.text())
     //     .then(csv => {
 
+    //         console.log(csv)
     //         csvChecker = findWord('GET', csv);
+
+    //         console.log(csvChecker)
+
+
+
+    //         var rows = csv.split('\n');
+    //         var values = csv.split(',');
+
+            
+
+    //         for (let i = 0; i < rows.length; i++) {
+
+    //             if (i > 1) {
+    //                 values = rows[i].split(',');
+    //                 column0.push(`${values[0]}`);
+    //                 column1.push(`${values[1]}`);
+    //                 column2.push(`${values[2]}`);
+    //             }
+
+    //         }
+
+
+
+    //         for (let i = 0; i < column2.length - 1; i++){
+
+    //             const url = column2[i]
+
+    //             if (column1[i] == "undefined") {
+    //             } else {
+    //                 createLinkElement(url, 'dink', 'links-container');
+    //                 createParagraphElement(column1[i], 'p0-container', 'p1')
+    //                 createParagraphElement(column0[i], 'p1-container', 'p2')
+    //             }
+
+    //         }
 
 
     //     })
@@ -125,10 +162,6 @@ function fetchCSV(file) {
                     createParagraphElement(column1[i], 'p0-container', 'p1')
                     createParagraphElement(column0[i], 'p1-container', 'p2')
                 }
-
-
-
-                
 
             }
 
