@@ -30,13 +30,15 @@ window.onload = () => {
 
                 csvChecker = findWord('GET', csv);
 
-                // console.log(csvChecker)
-                // console.log(csv.length)
+                console.log(csv)
+                console.log(csvChecker)
+                console.log(csv.length)
 
 
                 if (csvChecker === false && csv.length < 20000) {
                 // if (csvChecker === false || ) {
                     // console.log('yuss')
+                    console.log("GOAL")
 
                     // createParagraphElement('title', 'title-div', 'ph1')
                     console.log(csvFileArray[i])
