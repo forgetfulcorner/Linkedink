@@ -1,6 +1,6 @@
 const PORT = 8000
 
-const excludedWords = ['Toppers', 'Technical', 'Women', 'Men', 'Wovens', 'Shapewear', 'Denim', 'Roughwear', 'Volunteer', 'Headwear', 'Outerwear', 'Sweater', 'Urban', 'Merchandising', 'Kitchen', 'Sprinkler', 'Landscape', 'Hosiery', 'Sales', 'Electrical', 'Fire', 'Footwear', 'Handbag', 'Handbags', 'Beauty', 'Merchandising', 'Style', 'Kids', 'Girls', 'Boys', 'Bath']
+const excludedWords = ['Toppers', 'Technical', 'Women', 'Men', 'Wovens', 'Shapewear', 'Denim', 'Roughwear', 'Volunteer', 'Headwear', 'Outerwear', 'Sweater', 'Urban', 'Merchandising', 'Kitchen', 'Sprinkler', 'Landscape', 'Hosiery', 'Sales', 'Electrical', 'Fire', 'Footwear', 'Handbag', 'Handbags', 'Beauty', 'Merchandising', 'Style', 'Kids', 'Girls', 'Boys', 'Bath', 'Cashier', 'Textile', 'Textiles', 'Pricing', 'Editor', 'Engineer']
 const excludedWordsState = 1 // STATE SET TO 1 IS ACTIVE. STATE SET TO 0 IS INACTIVE.
 
 let excludedWordCounter = 0;
