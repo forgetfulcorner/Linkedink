@@ -28,14 +28,16 @@ window.onload = () => {
             .then(res => res.text())
             .then(csv => {
 
-                csvChecker = findWord('GET', csv);
+                csvChecker1 = findWord('GET', csv);
+                csvChecker2 = findWord('suggestions', csv);
 
                 console.log(csv)
-                console.log(csvChecker)
+                console.log(csvChecker1)
+                console.log(csvChecker2)
                 console.log(csv.length)
 
 
-                if (csvChecker === false && csv.length < 20000) {
+                if (csvChecker1 === false && csvChecker2 === false && csv.length < 20000) {
                 // if (csvChecker === false || ) {
                     // console.log('yuss')
                     console.log("GOAL")
